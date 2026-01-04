@@ -1,0 +1,12 @@
+{
+  "name": "she-films-society",
+  "version": "1.0.0",
+  "description": "she films society - for girlies in their storytelling era",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": ["storytelling", "content-creation", "community"],
+  "author": "",
+  "license": "MIT"
+}

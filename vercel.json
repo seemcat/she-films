@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "she-films-society",
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@vercel/static"
+    }
+  ]
+}
