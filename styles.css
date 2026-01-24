@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     color: #1a1a1a;
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><text y="24" font-size="24">🎥</text></svg>'), auto;
+    padding-top: 40px;
 }
 
 h1 {
@@ -22,10 +23,58 @@ h2 {
     font-weight: 700;
 }
 
+/* Announcement Banner */
+.announcement-banner {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    padding: 10px 0;
+}
+
+.announcement-banner a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.announcement-banner a:hover {
+    opacity: 0.7;
+}
+
+.marquee {
+    display: flex;
+    width: fit-content;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee-content {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.marquee-content span {
+    padding: 0 50px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* Navigation */
 .nav {
     position: absolute;
-    top: 20px;
+    top: 60px;
     left: 20px;
     z-index: 1000;
     display: flex;
