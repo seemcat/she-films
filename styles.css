@@ -182,6 +182,10 @@ h2 {
     margin: 0 auto;
 }
 
+.content-section.compact {
+    padding: 30px 40px;
+}
+
 .content-section h2 {
     font-size: clamp(32px, 4vw, 48px);
     font-weight: 400;
