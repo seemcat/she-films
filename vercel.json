@@ -11,6 +11,10 @@
     {
       "src": "*.css",
       "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.{png,jpg,jpeg,gif,svg,webp}",
+      "use": "@vercel/static"
     }
   ]
 }
