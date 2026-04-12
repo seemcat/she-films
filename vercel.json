@@ -2,5 +2,6 @@
   "version": 2,
   "name": "she-films-society",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "outputDirectory": "."
 }
