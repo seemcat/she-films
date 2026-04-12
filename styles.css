@@ -346,6 +346,101 @@ h2 {
     opacity: 0.7;
 }
 
+/* Graduates Section */
+.graduates-section {
+    background-color: #f2c0ce;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.graduates-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.graduates-section h2 {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(32px, 4vw, 48px);
+    color: #380d25;
+    margin-bottom: 15px;
+}
+
+.graduates-intro {
+    font-size: clamp(14px, 1.2vw, 16px);
+    color: #380d25;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.graduates-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px 20px;
+    justify-items: center;
+}
+
+.grad-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.grad-photo {
+    background-color: #fff;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 14px,
+            rgba(240, 180, 200, 0.3) 14px,
+            rgba(240, 180, 200, 0.3) 20px
+        ),
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 14px,
+            rgba(240, 180, 200, 0.3) 14px,
+            rgba(240, 180, 200, 0.3) 20px
+        );
+    background-size: 20px 20px;
+    padding: 8px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: rotate(-1deg);
+}
+
+.grad-card:nth-child(2) .grad-photo { transform: rotate(1.5deg); }
+.grad-card:nth-child(3) .grad-photo { transform: rotate(-0.5deg); }
+.grad-card:nth-child(4) .grad-photo { transform: rotate(1deg); }
+.grad-card:nth-child(5) .grad-photo { transform: rotate(-1.5deg); }
+.grad-card:nth-child(6) .grad-photo { transform: rotate(1deg); }
+.grad-card:nth-child(7) .grad-photo { transform: rotate(-1deg); }
+.grad-card:nth-child(8) .grad-photo { transform: rotate(0.5deg); }
+.grad-card:nth-child(9) .grad-photo { transform: rotate(-1.5deg); }
+.grad-card:nth-child(10) .grad-photo { transform: rotate(1deg); }
+
+.grad-photo img {
+    display: block;
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.grad-card a {
+    color: #380d25;
+    text-decoration: none;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.grad-card a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav {
@@ -432,5 +527,19 @@ h2 {
     .apply-btn {
         width: 100%;
         padding: 15px;
+    }
+
+    .graduates-section {
+        padding: 50px 20px;
+    }
+
+    .graduates-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .grad-photo img {
+        width: 90px;
+        height: 105px;
     }
 }
