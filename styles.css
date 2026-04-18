@@ -130,18 +130,20 @@ h2 {
     margin: 0;
 }
 
-.hero-text .cta {
+.cta-btn {
+    display: inline-block;
+    align-self: flex-start;
     margin-top: 20px;
-}
-
-.hero-text .cta a {
-    color: inherit;
+    background-color: #000;
+    color: #fff;
     text-decoration: none;
+    padding: 14px 28px;
+    font-size: clamp(15px, 1.4vw, 18px);
     transition: opacity 0.3s;
 }
 
-.hero-text .cta a:hover {
-    opacity: 0.7;
+.cta-btn:hover {
+    opacity: 0.8;
 }
 
 /* About Page */
@@ -303,6 +305,16 @@ h2 {
     margin-bottom: 20px;
     font-size: clamp(15px, 1.2vw, 17px);
     line-height: 1.7;
+}
+
+.text-column a {
+    color: inherit;
+    text-decoration: underline;
+    transition: opacity 0.3s;
+}
+
+.text-column a:hover {
+    opacity: 0.7;
 }
 
 .commitment-header,
@@ -527,6 +539,10 @@ h2 {
     .apply-btn {
         width: 100%;
         padding: 15px;
+    }
+
+    .cta-btn {
+        align-self: center;
     }
 
     .graduates-section {
